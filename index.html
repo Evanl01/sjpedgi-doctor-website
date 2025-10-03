@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. John Y Tung, MD - South Jersey Pediatric Gastroenterology LLC</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: black;
+            background: white;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+            animation: fadeIn 0.8s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 60px 40px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+            opacity: 0;
+            animation: slideIn 0.6s ease-out forwards;
+        }
+
+        .section:nth-child(1) { animation-delay: 0.2s; }
+        .section:nth-child(2) { animation-delay: 0.4s; }
+        .section:nth-child(3) { animation-delay: 0.6s; }
+        .section:nth-child(4) { animation-delay: 0.8s; }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        h2 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 1.8em;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            color: black;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .info-card {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .info-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+        }
+
+        .info-card h3 {
+            color: #667eea;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+
+        .contact-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px 40px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            margin-top: 20px;
+        }
+
+        .contact-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
+        }
+
+        footer {
+            background: #f8f9fa;
+            text-align: center;
+            padding: 20px;
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            .content {
+                padding: 30px 20px;
+            }
+
+            header {
+                padding: 40px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Dr. John Y Tung, MD</h1>
+            <p class="subtitle">South Jersey Pediatric Gastroenterology LLC</p>
+        </header>
+
+        <div class="content">
+            <div class="section">
+                <h2>Welcome to South Jersey Pediatric Gastroenterology</h2>
+                <p>Welcome to SJPEDGI, a highly regarded medical practice specializing in pediatric gastroenterology. We are dedicated to providing exceptional care to children with comprehensive, compassionate treatment in South Jersey and beyond.</p>
+            </div>
+
+            <div class="section">
+                <h2>About Dr. John Y Tung</h2>
+                <p>Dr. John Tung is a board-certified expert in pediatric gastroenterology, leading South Jersey Pediatric Gastroenterology (SJPEDGI) with a commitment to providing exceptional care. With extensive training and experience at prestigious institutions like Children's Hospitals of Philadelphia and AI DuPont Children's Hospital, Dr. Tung has earned recognition as a top doctor in the region.</p>
+                <p>SJPEDGI collaborates with renowned hospitals and teaching institutions in New Jersey, Philadelphia, and Delaware, ensuring the highest standards of treatment for children. Dr. Tung's dedication to research, exemplified by his American Gastroenterology Association Grant, further enhances the practice's commitment to advancing the understanding and treatment of pediatric gastrointestinal conditions.</p>
+            </div>
+
+            <div class="section">
+                <h2>Services</h2>
+                <div class="info-grid">
+                    <div class="info-card">
+                        <h3>Colonoscopy</h3>
+                        <p>Comprehensive diagnostic and therapeutic colonoscopy procedures for pediatric patients</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>Upper Endoscopy</h3>
+                        <p>Advanced upper endoscopic procedures to diagnose and treat gastrointestinal conditions</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>Biologics</h3>
+                        <p>Specialized biologic therapies for complex pediatric gastroenterological conditions</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Contact & Locations</h2>
+                <div class="info-grid">
+                    <div class="info-card">
+                        <h3>Contact Information</h3>
+                        <p><strong>Phone:</strong><br>
+                        +1 (609) 625-8688</p>
+                        <p><strong>Note:</strong><br>
+                        Closed on Fridays</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>Mays Landing Office</h3>
+                        <p><strong>Address:</strong><br>
+                        5429 Harding Hwy Ste 302<br>
+                        Mays Landing, NJ 08330</p>
+                        <p><strong>Hours:</strong><br>
+                        Monday & Wednesday: 9 AM - 5 PM</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>Voorhees Office</h3>
+                        <p><strong>Address:</strong><br>
+                        1 Britton Place<br>
+                        Voorhees Township, NJ 08043</p>
+                        <p><strong>Hours:</strong><br>
+                        Tuesday & Thursday: 9 AM - 5 PM</p>
+                    </div>
+                    
+                </div>
+                <p>For appointments and inquiries, please contact our office. We are dedicated to providing the highest quality care to children in South Jersey and beyond.</p>
+                <a href="tel:+16096258688" class="contact-btn">Call (609) 625-8688</a>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 South Jersey Pediatric Gastroenterology LLC. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script>
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+
+        // Add fade-in effect on scroll for sections
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateX(0)';
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.section').forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>
